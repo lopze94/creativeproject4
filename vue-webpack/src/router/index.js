@@ -11,6 +11,7 @@ import Orden from '@/components/Orden'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/culturabakery',
