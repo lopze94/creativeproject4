@@ -1,0 +1,32 @@
+<template>
+  <div>
+    <img v-bind:src="imagePath" class="w-100">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">Menu</h1>
+          <div class="card border-0 text-white my-2" v-for="id in menulist">
+            <img class="card-img" alt="Card image" v-bind:src="id.url" />
+            <div class="card-img-overlay">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title">{{ id.name }}
+                    <span class="badge badge-light ml-2 py-2">${{id.price}}</span>
+                  </h5>
+                </div>
+                <div class="col">
+                  <button class="btn btn-outline-white">Ordenar</button>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          2 of 2
+        </div>
+      </div>
+
+    </div>
+  </div>
+</template>

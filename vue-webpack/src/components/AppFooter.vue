@@ -10,7 +10,7 @@
           <span class="align-middle h6">(801) 400-8794</span>
         </div>
         <div class="col-sm">
-          <span class="align-middle h6">jlopez@lzstartups.com</span>
+          <span class="align-middle h6">{{ email }}</span>
         </div>
       </div>
     </div>
@@ -21,6 +21,10 @@
  export default {
      name: 'AppFooter',
      data () {
+       return{
+email: "info@culturabakery.com"
+       }
+       
      }
  }
 </script>

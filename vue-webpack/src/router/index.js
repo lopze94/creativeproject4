@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HomePage from '@/components/HomePage'
 import Menu from '@/components/Menu'
-import Location from '@/components/Location'
+import Local from '@/components/Local'
+import Orden from '@/components/Orden'
 
 // index.js or main.js
 
@@ -22,9 +23,14 @@ export default new Router({
       component: Menu
     },
     {
-      path: '/location',
-      name: 'Location',
-      component: Location
+      path: '/local',
+      name: 'Local',
+      component: Local
+    },
+    {
+      path: '/orden',
+      name: 'Orden',
+      component: Orden
     }
   ]
 })

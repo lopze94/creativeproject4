@@ -4,29 +4,29 @@
       <div class="container py-4">	
         <h1 class="text-center">Bienvenido</h1>
   <p>La historia detrás de cada platillo es la esencia de nuestra cocina, pasión por los sabores, por el arte, la creación y por la perfección absoluta.</p>
-   <div class="card-deck mx-auto">
+   <div class="card-deck">
+  <div class="card">
+    <img v-bind:src="imagePath1">
+    <div class="card-body">
+      <h5 class="card-title">Menu</h5>
+      <p class="card-text">Explora nuestros deliciosos platillos y agregalos a tu orden. Puedes enviar tu orden, nosotros la preparamos, y tu la recoges cuando nos visites.</p>
+  <router-link to="/menu" class="btn btn-outline-primary">Ver Menu</router-link>
+    </div>
+  </div>
   <div class="card">
     <img v-bind:src="imagePath2">
     <div class="card-body">
-      <h5 class="card-title">Menu</h5>
-      <p class="card-text">Learn more about our delicious dishes and add them to your order. You can pick up your order when you visit us at our location.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <h5 class="card-title">Local</h5>
+      <p class="card-text">Visitanos en nuestro local ubicado en Provo, Utah.</p>
+      <router-link to="/local" class="btn btn-outline-primary">Contacto</router-link>
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="" alt="Card image cap">
+    <img v-bind:src="imagePath3">
     <div class="card-body">
-      <h5 class="card-title">Location</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Your Order</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <h5 class="card-title">Tu Orden</h5>
+      <p class="card-text">Agrega platillos a tu orden y nosotros la prepararemos por ti. Visitanos para recoger tu orden.</p>
+      <router-link to="/orden" class="btn btn-outline-primary">Ver Orden</router-link>
     </div>
   </div>
 </div>
@@ -41,7 +41,9 @@
      data () {
 	 return {
        imagePath: '/static/img/home.jpg',
-       imagePath2: '/static/img/tamal.jpg'
+       imagePath1: '/static/img/tamal.jpg',
+       imagePath2: '/static/img/location.jpg',
+       imagePath3: '/static/img/order.jpg'
 	 }
      }
  }
