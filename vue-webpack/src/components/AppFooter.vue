@@ -7,7 +7,7 @@
           <span class="align-middle h6">Made by Josue Lopez © 2018</span>
         </div>
         <div class="col-sm">
-          <span class="align-middle h6">(801) 400-8794</span>
+          <a href="https://github.com/lopze94/creativeproject4.git" class="btn btn-outline-light">Github</a>
         </div>
         <div class="col-sm">
           <span class="align-middle h6">{{ email }}</span>

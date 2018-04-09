@@ -14,7 +14,7 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/culturabakery',
+      path: '/',
       name: 'HomePage',
       component: HomePage
     },
